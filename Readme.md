@@ -1,6 +1,6 @@
 # Torrent scripts
 
-Torrent scripts is the use of (transmission daemon) [https://linux.die.net/man/1/transmission-remote] and (openvpn)[https://linux.die.net/man/8/openvpn] to add movies and series torrents while
+Torrent scripts is the use of [transmission daemon] (https://linux.die.net/man/1/transmission-remote) and [openvpn](https://linux.die.net/man/8/openvpn) to add movies and series torrents while
 using vpn. Whenever the torrent is added using the scripts, the program checks if the vpn is running or not, and starts the vpn if it is not running. When all the torrents are finished downloading the vpn service is stoped. 
 
 ## Requirements
@@ -37,13 +37,14 @@ and make sure `script-torrent-done-enabled` is true and you specify the path to 
 ```
 
 ## Usage
-
+```
 ./addmovie.sh torrent
-
+```
+```
 ./addserie.sh series-name torrent
-
+```
 ## Files
-*config/settings.json
-*addmovie.sh
-*addserie.sh
-*completion.sh
+* config/settings.json
+* addmovie.sh
+* addserie.sh
+* completion.sh
